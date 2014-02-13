@@ -9,11 +9,15 @@
 #import "Communicator.h"
 #import "SRWebSocket.h"
 #import "SocketIO.h"
+#import "SocketIOPacket.h"
 
 @interface Communicator()
 
 @property (strong, nonatomic) SocketIO *socketIO;
 @property (strong, nonatomic) SocketIOPacket *packet;
+@property (strong, nonatomic) NSArray *data;
+@property (strong, nonatomic) NSMutableArray *location;
+@property (strong, nonatomic) NSNumber *latitude;
 
 @end
 
@@ -34,15 +38,21 @@
     [driver setObject:@"1" forKey:@"driver_id"];
     
     [self.socketIO sendEvent:@"register customer" withData:driver];
-    
-//    [[self.socketIO didReceiveEvent(SocketIOPacket *)self.packet];
-    
-//    NSLog(@"%@",self.packet);
 }
 
-- (void) socketIO:(SocketIO *)socket didReceiveMessage:(SocketIOPacket *)packet
-{
-    NSLog(@"didReceiveMessage() >>> data: %@", packet);
+- (void) socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet {
+    
+    self.data = packet.args;
+    self.location = [packet.args objectAtIndex:0];
+    self.latitude = [self.location valueForKey: @"latitude"];
+    
+    if([self.latitude doubleValue]> 0.25) {
+        NSLog(@"left");
+    } else if ([self.latitude doubleValue] < -0.25) {
+        NSLog(@"right");
+    }
+    
+    NSLog(@"%@", self.latitude);
 }
 
 @end

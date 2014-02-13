@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "01691681B2ED4A95A7F4385C"
-               BuildableName = "libPods-SocketRocket.a"
-               BlueprintName = "Pods-SocketRocket"
+               BlueprintIdentifier = "53AE037B89374067AC1AA85E"
+               BuildableName = "libPods-RFduino-library.a"
+               BlueprintName = "Pods-RFduino-library"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

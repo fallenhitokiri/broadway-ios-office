@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-RFduino-library.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SocketRocket.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A00BEF8A7E0A45C08D04889A</key>
+		<key>01691681B2ED4A95A7F4385C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CC642F2B794B4491A479C749</key>
+		<key>0C9AA74FEACC4D47952B727E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F8A2AD66725F4155A4A02A48</key>
+		<key>53AE037B89374067AC1AA85E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>607FFAF0A9DE49199500F2F1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

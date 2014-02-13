@@ -1,12 +1,15 @@
 PODS:
+  - RFduino-library (1.0.0)
   - socket.IO (0.4.1):
     - SocketRocket (~> 0.2)
   - SocketRocket (0.3.1-beta2)
 
 DEPENDENCIES:
+  - RFduino-library (~> 1.0.0)
   - socket.IO (~> 0.4.1)
 
 SPEC CHECKSUMS:
+  RFduino-library: 5e7273998324973161f4c52b55897c6064ae4cf9
   socket.IO: e0f5dc9a4dda5e41653f2032ac48217e1563176e
   SocketRocket: 7ac946bcce46287a791dfff3c1f8daa692821dae
 

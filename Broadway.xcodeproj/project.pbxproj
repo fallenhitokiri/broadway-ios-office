@@ -60,7 +60,7 @@
 		FAA4ADF218AD64A900A3F8A9 /* BroadwayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BroadwayTests-Info.plist"; sourceTree = "<group>"; };
 		FAA4ADF418AD64A900A3F8A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAA4ADF618AD64A900A3F8A9 /* BroadwayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadwayTests.m; sourceTree = "<group>"; };
-		FAA4AE0018AD64EE00A3F8A9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		FAA4AE0018AD64EE00A3F8A9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FAA4AE0318AD668900A3F8A9 /* Communicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Communicator.h; path = Communicator/Communicator.h; sourceTree = "<group>"; };
 		FAA4AE0418AD668900A3F8A9 /* Communicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Communicator.m; path = Communicator/Communicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */

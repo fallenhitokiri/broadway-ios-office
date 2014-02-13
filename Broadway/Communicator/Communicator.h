@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import "SocketIO.h"
 
-@interface Communicator : NSObject
+@interface Communicator : NSObject <SocketIODelegate>
 
 - (id)init;
 

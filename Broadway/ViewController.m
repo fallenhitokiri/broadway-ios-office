@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "Communicator.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic) Communicator *communicator;
+@property (strong, nonatomic) NSString *driverID;
 
 @end
 
@@ -17,7 +21,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+	self.driverID = @"1";
+    self.communicator = [[Communicator alloc] init];
+    [self.communicator connect];
 }
 
 - (void)didReceiveMemoryWarning

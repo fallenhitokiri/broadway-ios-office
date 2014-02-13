@@ -24,6 +24,7 @@
 		FAA4ADF518AD64A900A3F8A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAA4ADF318AD64A900A3F8A9 /* InfoPlist.strings */; };
 		FAA4ADF718AD64A900A3F8A9 /* BroadwayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA4ADF618AD64A900A3F8A9 /* BroadwayTests.m */; };
 		FAA4AE0118AD64EE00A3F8A9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FAA4AE0018AD64EE00A3F8A9 /* Podfile */; };
+		FAA4AE0518AD668900A3F8A9 /* Communicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA4AE0418AD668900A3F8A9 /* Communicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		FAA4ADF418AD64A900A3F8A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAA4ADF618AD64A900A3F8A9 /* BroadwayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadwayTests.m; sourceTree = "<group>"; };
 		FAA4AE0018AD64EE00A3F8A9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		FAA4AE0318AD668900A3F8A9 /* Communicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Communicator.h; path = Communicator/Communicator.h; sourceTree = "<group>"; };
+		FAA4AE0418AD668900A3F8A9 /* Communicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Communicator.m; path = Communicator/Communicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,7 @@
 				FAA4ADD718AD64A900A3F8A9 /* AppDelegate.h */,
 				FAA4ADD818AD64A900A3F8A9 /* AppDelegate.m */,
 				FAA4ADDA18AD64A900A3F8A9 /* Main_iPhone.storyboard */,
+				FAA4AE0618AD668D00A3F8A9 /* Communicator */,
 				FAA4ADDD18AD64A900A3F8A9 /* Main_iPad.storyboard */,
 				FAA4AE0218AD654300A3F8A9 /* ViewController */,
 				FAA4ADE318AD64A900A3F8A9 /* Images.xcassets */,
@@ -170,6 +174,15 @@
 				FAA4ADE118AD64A900A3F8A9 /* ViewController.m */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		FAA4AE0618AD668D00A3F8A9 /* Communicator */ = {
+			isa = PBXGroup;
+			children = (
+				FAA4AE0318AD668900A3F8A9 /* Communicator.h */,
+				FAA4AE0418AD668900A3F8A9 /* Communicator.m */,
+			);
+			name = Communicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +233,9 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
+					FAA4ADC418AD64A900A3F8A9 = {
+						DevelopmentTeam = 3PT2K2QZ69;
+					};
 					FAA4ADE818AD64A900A3F8A9 = {
 						TestTargetID = FAA4ADC418AD64A900A3F8A9;
 					};
@@ -307,6 +323,7 @@
 			files = (
 				FAA4ADE218AD64A900A3F8A9 /* ViewController.m in Sources */,
 				FAA4ADD918AD64A900A3F8A9 /* AppDelegate.m in Sources */,
+				FAA4AE0518AD668900A3F8A9 /* Communicator.m in Sources */,
 				FAA4ADD518AD64A900A3F8A9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Broadway/Broadway-Prefix.pch";
 				INFOPLIST_FILE = "Broadway/Broadway-Info.plist";
@@ -459,6 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Broadway/Broadway-Prefix.pch";
 				INFOPLIST_FILE = "Broadway/Broadway-Info.plist";

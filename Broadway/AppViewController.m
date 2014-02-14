@@ -20,6 +20,7 @@
 @property (strong, nonatomic) NSArray *data;
 @property (strong, nonatomic) NSMutableArray *location;
 @property (strong, nonatomic) NSNumber *latitude;
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 @property (strong, nonatomic) NSString *driverID;
 
@@ -33,6 +34,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if (self) {
+        self.locationManager = [[CLLocationManager alloc] init];
+        self.locationManager.delegate = self;
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        self.locationManager.distanceFilter = kCLDistanceFilterNone;
+        self.locationManager.pausesLocationUpdatesAutomatically = NO;
+        [self.locationManager startUpdatingLocation];
+    }
     
 	self.driverID = @"1";
     self.socketIO = [[SocketIO alloc] initWithDelegate:self];

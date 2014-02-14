@@ -175,7 +175,9 @@ float dataFloat(NSData *data)
     
     if (loadedService) {
         NSLog(@"writing to disconnect characteristic");
-        NSData *data = [NSData alloc];
+        // fix for iOS SDK 7.0 - at least one byte must now be transferred
+        uint8_t flag = 1;
+        NSData *data = [NSData dataWithBytes:(void*)&flag length:1];
         [peripheral writeValue:data forCharacteristic:disconnect_characteristic type:CBCharacteristicWriteWithoutResponse];
     }
     

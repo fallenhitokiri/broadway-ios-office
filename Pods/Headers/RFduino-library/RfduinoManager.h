@@ -1,1 +1,0 @@
-../../RFduino-library/Classes/ios/RfduinoManager.h

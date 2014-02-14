@@ -24,38 +24,16 @@
  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-#import <Foundation/Foundation.h>
-#import <CoreBluetooth/CoreBluetooth.h>
+#import <UIKit/UIKit.h>
 
-#import "RFduinoDelegate.h"
+#import "RFduinoManagerDelegate.h"
 
 @class RFduinoManager;
+@class RFduino;
 
-char data(NSData *data);
-uint8_t dataByte(NSData *data);
-int dataInt(NSData *data);
-float dataFloat(NSData *data);
-
-@interface RFduino : NSObject<CBPeripheralDelegate>
+@interface ScanViewController : UITableViewController<RFduinoManagerDelegate, UITableViewDelegate>
 {
+    RFduinoManager *rfduinoManager;
 }
-
-@property(assign, nonatomic) id<RFduinoDelegate> delegate;
-
-@property(strong, nonatomic) CBPeripheral *peripheral;
-
-@property(strong, nonatomic) RFduinoManager *rfduinoManager;
-
-@property(strong, nonatomic) NSString *name;
-@property(strong, nonatomic) NSString *UUID;
-@property(strong, nonatomic) NSData *advertisementData;
-@property(strong, nonatomic) NSNumber *advertisementRSSI;
-@property(assign, nonatomic) NSInteger advertisementPackets;
-@property(strong, nonatomic) NSDate *lastAdvertisement;
-@property(assign, nonatomic) NSInteger outOfRange;
-- (void)connected;
-- (void)disconnect;
-
-- (void)send:(NSData *)data;
 
 @end

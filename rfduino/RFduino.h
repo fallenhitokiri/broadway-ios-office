@@ -25,27 +25,42 @@
 */
 
 #import <Foundation/Foundation.h>
+
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
 #import <CoreBluetooth/CoreBluetooth.h>
+#elif TARGET_OS_MAC
+#import <IOBluetooth/IOBluetooth.h>
+#endif
 
-#import "RFduinoManagerDelegate.h"
+#import "RFduinoDelegate.h"
 
-@interface RFduinoManager : NSObject <CBCentralManagerDelegate, UIAlertViewDelegate>
+@class RFduinoManager;
+
+char data(NSData *data);
+uint8_t dataByte(NSData *data);
+int dataInt(NSData *data);
+float dataFloat(NSData *data);
+
+@interface RFduino : NSObject<CBPeripheralDelegate>
 {
-    CBCentralManager *central;
 }
 
-+ (RFduinoManager *)sharedRFduinoManager;
+@property(assign, nonatomic) id<RFduinoDelegate> delegate;
 
-@property (nonatomic, assign) id<RFduinoManagerDelegate> delegate;
-@property (nonatomic, strong) NSMutableArray *rfduinos;
+@property(strong, nonatomic) CBPeripheral *peripheral;
 
-- (bool)isScanning;
-- (void)startScan;
-- (void)stopScan;
+@property(strong, nonatomic) RFduinoManager *rfduinoManager;
 
-- (void)connectRFduino:(RFduino *)rfduino;
-- (void)disconnectRFduino:(RFduino *)rfduino;
+@property(strong, nonatomic) NSString *name;
+@property(strong, nonatomic) NSString *UUID;
+@property(strong, nonatomic) NSData *advertisementData;
+@property(strong, nonatomic) NSNumber *advertisementRSSI;
+@property(assign, nonatomic) NSInteger advertisementPackets;
+@property(strong, nonatomic) NSDate *lastAdvertisement;
+@property(assign, nonatomic) NSInteger outOfRange;
+- (void)connected;
+- (void)disconnect;
 
-- (void)loadedServiceRFduino:(RFduino *)rfduino;
+- (void)send:(NSData *)data;
 
 @end

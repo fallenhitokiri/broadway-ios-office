@@ -8,15 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		F9BD1E3D872541999C1F64B7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4DF76D060F438FA032ABCA /* libPods.a */; };
+		FA20CFEA18AD8B1C009AC5F9 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA20CFE918AD8B1C009AC5F9 /* CoreBluetooth.framework */; };
+		FA20CFED18AD8B4B009AC5F9 /* Mover.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20CFEC18AD8B4B009AC5F9 /* Mover.m */; };
+		FA586D5F18AD9200001DCA79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA586D5418AD9200001DCA79 /* AppDelegate.m */; };
+		FA586D6018AD9200001DCA79 /* CustomCellBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = FA586D5618AD9200001DCA79 /* CustomCellBackground.m */; };
+		FA586D6118AD9200001DCA79 /* RFduino.m in Sources */ = {isa = PBXBuildFile; fileRef = FA586D5818AD9200001DCA79 /* RFduino.m */; };
+		FA586D6218AD9200001DCA79 /* RfduinoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA586D5B18AD9200001DCA79 /* RfduinoManager.m */; };
+		FA586D6318AD9200001DCA79 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA586D5E18AD9200001DCA79 /* ScanViewController.m */; };
 		FAA4ADC918AD64A900A3F8A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA4ADC818AD64A900A3F8A9 /* Foundation.framework */; };
 		FAA4ADCB18AD64A900A3F8A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA4ADCA18AD64A900A3F8A9 /* CoreGraphics.framework */; };
 		FAA4ADCD18AD64A900A3F8A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA4ADCC18AD64A900A3F8A9 /* UIKit.framework */; };
 		FAA4ADD318AD64A900A3F8A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAA4ADD118AD64A900A3F8A9 /* InfoPlist.strings */; };
 		FAA4ADD518AD64A900A3F8A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA4ADD418AD64A900A3F8A9 /* main.m */; };
-		FAA4ADD918AD64A900A3F8A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA4ADD818AD64A900A3F8A9 /* AppDelegate.m */; };
 		FAA4ADDC18AD64A900A3F8A9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA4ADDA18AD64A900A3F8A9 /* Main_iPhone.storyboard */; };
 		FAA4ADDF18AD64A900A3F8A9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA4ADDD18AD64A900A3F8A9 /* Main_iPad.storyboard */; };
-		FAA4ADE218AD64A900A3F8A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA4ADE118AD64A900A3F8A9 /* ViewController.m */; };
+		FAA4ADE218AD64A900A3F8A9 /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA4ADE118AD64A900A3F8A9 /* AppViewController.m */; };
 		FAA4ADE418AD64A900A3F8A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA4ADE318AD64A900A3F8A9 /* Images.xcassets */; };
 		FAA4ADEB18AD64A900A3F8A9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA4ADEA18AD64A900A3F8A9 /* XCTest.framework */; };
 		FAA4ADEC18AD64A900A3F8A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA4ADC818AD64A900A3F8A9 /* Foundation.framework */; };
@@ -40,6 +46,21 @@
 /* Begin PBXFileReference section */
 		554B0E007B6A454197D897E9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		EE4DF76D060F438FA032ABCA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA20CFE918AD8B1C009AC5F9 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		FA20CFEB18AD8B4B009AC5F9 /* Mover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mover.h; path = Mover/Mover.h; sourceTree = "<group>"; };
+		FA20CFEC18AD8B4B009AC5F9 /* Mover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mover.m; path = Mover/Mover.m; sourceTree = "<group>"; };
+		FA586D5318AD9200001DCA79 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA586D5418AD9200001DCA79 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA586D5518AD9200001DCA79 /* CustomCellBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellBackground.h; sourceTree = "<group>"; };
+		FA586D5618AD9200001DCA79 /* CustomCellBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellBackground.m; sourceTree = "<group>"; };
+		FA586D5718AD9200001DCA79 /* RFduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFduino.h; sourceTree = "<group>"; };
+		FA586D5818AD9200001DCA79 /* RFduino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFduino.m; sourceTree = "<group>"; };
+		FA586D5918AD9200001DCA79 /* RFduinoDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFduinoDelegate.h; sourceTree = "<group>"; };
+		FA586D5A18AD9200001DCA79 /* RfduinoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RfduinoManager.h; sourceTree = "<group>"; };
+		FA586D5B18AD9200001DCA79 /* RfduinoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RfduinoManager.m; sourceTree = "<group>"; };
+		FA586D5C18AD9200001DCA79 /* RFduinoManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFduinoManagerDelegate.h; sourceTree = "<group>"; };
+		FA586D5D18AD9200001DCA79 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		FA586D5E18AD9200001DCA79 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
 		FAA4ADC518AD64A900A3F8A9 /* Broadway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Broadway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA4ADC818AD64A900A3F8A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAA4ADCA18AD64A900A3F8A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,12 +69,10 @@
 		FAA4ADD218AD64A900A3F8A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAA4ADD418AD64A900A3F8A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAA4ADD618AD64A900A3F8A9 /* Broadway-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Broadway-Prefix.pch"; sourceTree = "<group>"; };
-		FAA4ADD718AD64A900A3F8A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FAA4ADD818AD64A900A3F8A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FAA4ADDB18AD64A900A3F8A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		FAA4ADDE18AD64A900A3F8A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		FAA4ADE018AD64A900A3F8A9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FAA4ADE118AD64A900A3F8A9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FAA4ADE018AD64A900A3F8A9 /* AppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppViewController.h; sourceTree = "<group>"; };
+		FAA4ADE118AD64A900A3F8A9 /* AppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
 		FAA4ADE318AD64A900A3F8A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FAA4ADE918AD64A900A3F8A9 /* BroadwayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroadwayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA4ADEA18AD64A900A3F8A9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -70,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA20CFEA18AD8B1C009AC5F9 /* CoreBluetooth.framework in Frameworks */,
 				FAA4ADCB18AD64A900A3F8A9 /* CoreGraphics.framework in Frameworks */,
 				FAA4ADCD18AD64A900A3F8A9 /* UIKit.framework in Frameworks */,
 				FAA4ADC918AD64A900A3F8A9 /* Foundation.framework in Frameworks */,
@@ -90,9 +110,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA20CFEE18AD8B4E009AC5F9 /* Mover */ = {
+			isa = PBXGroup;
+			children = (
+				FA20CFEB18AD8B4B009AC5F9 /* Mover.h */,
+				FA20CFEC18AD8B4B009AC5F9 /* Mover.m */,
+			);
+			name = Mover;
+			sourceTree = "<group>";
+		};
+		FA586D5218AD9200001DCA79 /* rfduino */ = {
+			isa = PBXGroup;
+			children = (
+				FA586D5318AD9200001DCA79 /* AppDelegate.h */,
+				FA586D5418AD9200001DCA79 /* AppDelegate.m */,
+				FA586D5518AD9200001DCA79 /* CustomCellBackground.h */,
+				FA586D5618AD9200001DCA79 /* CustomCellBackground.m */,
+				FA586D5718AD9200001DCA79 /* RFduino.h */,
+				FA586D5818AD9200001DCA79 /* RFduino.m */,
+				FA586D5918AD9200001DCA79 /* RFduinoDelegate.h */,
+				FA586D5A18AD9200001DCA79 /* RfduinoManager.h */,
+				FA586D5B18AD9200001DCA79 /* RfduinoManager.m */,
+				FA586D5C18AD9200001DCA79 /* RFduinoManagerDelegate.h */,
+				FA586D5D18AD9200001DCA79 /* ScanViewController.h */,
+				FA586D5E18AD9200001DCA79 /* ScanViewController.m */,
+			);
+			path = rfduino;
+			sourceTree = "<group>";
+		};
 		FAA4ADBC18AD64A900A3F8A9 = {
 			isa = PBXGroup;
 			children = (
+				FA586D5218AD9200001DCA79 /* rfduino */,
 				FAA4AE0018AD64EE00A3F8A9 /* Podfile */,
 				FAA4ADCE18AD64A900A3F8A9 /* Broadway */,
 				FAA4ADF018AD64A900A3F8A9 /* BroadwayTests */,
@@ -114,6 +163,7 @@
 		FAA4ADC718AD64A900A3F8A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA20CFE918AD8B1C009AC5F9 /* CoreBluetooth.framework */,
 				FAA4ADC818AD64A900A3F8A9 /* Foundation.framework */,
 				FAA4ADCA18AD64A900A3F8A9 /* CoreGraphics.framework */,
 				FAA4ADCC18AD64A900A3F8A9 /* UIKit.framework */,
@@ -126,9 +176,8 @@
 		FAA4ADCE18AD64A900A3F8A9 /* Broadway */ = {
 			isa = PBXGroup;
 			children = (
-				FAA4ADD718AD64A900A3F8A9 /* AppDelegate.h */,
-				FAA4ADD818AD64A900A3F8A9 /* AppDelegate.m */,
 				FAA4ADDA18AD64A900A3F8A9 /* Main_iPhone.storyboard */,
+				FA20CFEE18AD8B4E009AC5F9 /* Mover */,
 				FAA4AE0618AD668D00A3F8A9 /* Communicator */,
 				FAA4ADDD18AD64A900A3F8A9 /* Main_iPad.storyboard */,
 				FAA4AE0218AD654300A3F8A9 /* ViewController */,
@@ -170,8 +219,8 @@
 		FAA4AE0218AD654300A3F8A9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FAA4ADE018AD64A900A3F8A9 /* ViewController.h */,
-				FAA4ADE118AD64A900A3F8A9 /* ViewController.m */,
+				FAA4ADE018AD64A900A3F8A9 /* AppViewController.h */,
+				FAA4ADE118AD64A900A3F8A9 /* AppViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -235,6 +284,11 @@
 				TargetAttributes = {
 					FAA4ADC418AD64A900A3F8A9 = {
 						DevelopmentTeam = 3PT2K2QZ69;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					FAA4ADE818AD64A900A3F8A9 = {
 						TestTargetID = FAA4ADC418AD64A900A3F8A9;
@@ -321,9 +375,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA4ADE218AD64A900A3F8A9 /* ViewController.m in Sources */,
-				FAA4ADD918AD64A900A3F8A9 /* AppDelegate.m in Sources */,
+				FAA4ADE218AD64A900A3F8A9 /* AppViewController.m in Sources */,
+				FA586D6318AD9200001DCA79 /* ScanViewController.m in Sources */,
+				FA586D5F18AD9200001DCA79 /* AppDelegate.m in Sources */,
+				FA586D6118AD9200001DCA79 /* RFduino.m in Sources */,
+				FA20CFED18AD8B4B009AC5F9 /* Mover.m in Sources */,
 				FAA4AE0518AD668900A3F8A9 /* Communicator.m in Sources */,
+				FA586D6018AD9200001DCA79 /* CustomCellBackground.m in Sources */,
+				FA586D6218AD9200001DCA79 /* RfduinoManager.m in Sources */,
 				FAA4ADD518AD64A900A3F8A9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

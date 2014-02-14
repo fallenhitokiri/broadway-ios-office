@@ -1,22 +1,25 @@
 //
-//  ViewController.m
+//  AppViewController.m
 //  Broadway
 //
 //  Created by Alexander Fringes on 2/13/14.
 //
 //
 
-#import "ViewController.h"
+#import "AppViewController.h"
 #import "Communicator.h"
 
-@interface ViewController ()
+@interface AppViewController()
 
 @property (strong, nonatomic) Communicator *communicator;
 @property (strong, nonatomic) NSString *driverID;
 
 @end
 
-@implementation ViewController
+
+@implementation AppViewController
+
+@synthesize rfduino;
 
 - (void)viewDidLoad
 {
@@ -25,6 +28,8 @@
 	self.driverID = @"1";
     self.communicator = [[Communicator alloc] init];
     [self.communicator connect];
+    
+    rfduino.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning

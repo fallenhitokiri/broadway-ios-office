@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 #import "RFduinoDelegate.h"
 #import "RFduino.h"
+#import "SocketIO.h"
 
-@interface AppViewController : UIViewController<RFduinoDelegate>
+@interface AppViewController : UIViewController<RFduinoDelegate, SocketIODelegate>
 
 @property(nonatomic, strong) RFduino *rfduino;
+
+- (void)connect;
 
 @end

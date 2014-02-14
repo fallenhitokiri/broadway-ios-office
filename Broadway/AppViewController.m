@@ -75,10 +75,10 @@
     self.location = [packet.args objectAtIndex:0];
     self.latitude = [self.location valueForKey: @"latitude"];
     
-    if([self.latitude doubleValue]> 0.20) {
+    if([self.latitude doubleValue]> 0.25) {
         NSLog(@"left");
         [self startMovingLeft];
-    } else if ([self.latitude doubleValue] < -0.20) {
+    } else if ([self.latitude doubleValue] < -0.25) {
         NSLog(@"right");
         [self startMovingRight];
     } else {
